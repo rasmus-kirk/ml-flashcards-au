@@ -1,5 +1,5 @@
 # ml-flashcards-au
-Flashcards for the Machine Learning at Aarhus University
+Flashcards for the Machine Learning course at Aarhus University
 
 ## Compile cards using [nix](https://nixos.org/)
 
