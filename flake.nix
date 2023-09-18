@@ -18,7 +18,9 @@
           buildPhase = ''
             mkdir -p $out
             unset SOURCE_DATE_EPOCH
-            SOURCE_DATE_EPOCH=315532800 mdankideck input $out
+            touch `find . -type f`
+            export SOURCE_DATE_EPOCH=315532800
+            mdankideck input $out
           '';
         }
     );
