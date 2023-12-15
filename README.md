@@ -1,5 +1,5 @@
 # ml-flashcards-au
-Flashcards for the Machine Learning at Aarhus University
+Flashcards for the Machine Learning course at Aarhus University
 
 ## Contributing
 
@@ -12,7 +12,7 @@ We use
 [markdown-anki-decks](https://github.com/lukesmurray/markdown-anki-decks)
 to compile the cards from markdown to actual anki decks:
 
-```bash
+```shell
 mdanki input output
 ```
 
@@ -24,7 +24,7 @@ Nix allows you to build the cards in a reproducible way, meaning that we
 will get precisely the same cards if we run the same commands on the same
 git revision of this repo.
 
-This also saves you from installing any dependencies other than nix. Simply
+This also saves you from installing any dependencies other than nix and it also saves you from worrying if you have the right versions. Simply
 install nix[^1] if you haven't already and run the following command:
 
 ```shell
