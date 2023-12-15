@@ -33,7 +33,4 @@ nix build --extra-experimental-features nix-command --extra-experimental-feature
 
 This will create a symbolic link (`./result`) with the anki files.
 
-[^1]: You can run the following command to install nix on linux and macos:
-```shell
-curl --proto '=https' --tlsv1.2 -sSf -L https://install.determinate.systems/nix | sh -s -- install
-```
+[^1]: You can run the following command to install nix on linux and macos: `curl --proto '=https' --tlsv1.2 -sSf -L https://install.determinate.systems/nix | sh -s -- install`. It uses the [Determinate Systems Nix Installer](https://github.com/DeterminateSystems/nix-installer) which is objectively superior to nix's native installer.
