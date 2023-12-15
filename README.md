@@ -24,10 +24,13 @@ Nix allows you to build the cards in a reproducible way, meaning that we
 will get precisely the same cards if we run the same commands on the same
 git revision of this repo.
 
-To compile using nix (with the experiemntal `nix` command enabled!):
+This also saves you from installing any dependencies other than nix. Simply
+install nix[^1] if you haven't already and run the following command:
 
-```
-nix build
+```shell
+nix build --extra-experimental-features nix-command --extra-experimental-features flakes
 ```
 
-This will create the cards in the `./result` folder.
+This will create a symbolic link (`./result`) with the anki files.
+
+[^1]: curl --proto '=https' --tlsv1.2 -sSf -L https://install.determinate.systems/nix | sh -s -- install
