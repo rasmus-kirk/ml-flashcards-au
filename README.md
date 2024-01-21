@@ -13,7 +13,7 @@ We use
 to compile the cards from markdown to actual anki decks:
 
 ```shell
-mdanki input output
+mdankideck input output
 ```
 
 This will create the cards in the output folder.
